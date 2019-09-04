@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #222222;
+}
+
+
+
+.clearfix:before,
+.clearfix:after {
+    content:'';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+header {
+    background: url(img/first-bg.jpg) no-repeat center top / cover;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+
+.logo {
+    display: block;
+    margin: 41px auto 0 auto;
+
+}
+
+.nav {
+    float: right;
+    display: none;
+    justify-content: flex-end;
+    margin-top: 41px;
+    font-size: 16px;
+    padding-right: 20px;
+
+}
+
+.login:hover,
+.login:focus {
+    color: #cde75d;
+    cursor: pointer;
+}
+
+.profile:hover,
+.profile:focus {
+    color: #cde75d;
+    cursor: pointer;
+}
+
+.about:hover,
+.about:focus {
+    color: #cde75d;
+    cursor: pointer;
+}
+
+.active {
+    color: #cde75d;
+}
+
+.titles_first {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 180px;
+}
+h1 {
+    font-size: 65px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.application {
+    color: #000000;
+}
+.button {
+    display: block;
+    background: #fed136;
+    color: #484543;
+    border-radius: 3px;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button:hover,
+.button:focus {
+    background: #FEAD1F;
+    cursor: pointer;
+}
+
+.popup {
+    color: white;
+    width: 300px;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 50px auto;
+    padding-bottom: 50px;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 5px;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+.close {
+    float: right;
+    color: #aaa;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+@keyframes animatetop {
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+
+}
+
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+
+.menu-button:focus {
+   outline: none !important;
+}
+
+.menu-button-line {
+    display: block;
+    background-color: #fed136;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 4px;
+    margin-left: 25px;
+
+}
+
+.menu-button-close {
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 12px;
+}
+
+.menu-button-times {
+    color: #fed136;
+    font-size: 30px;
+}
+.menu-button-close:focus {
+    outline: none !important;
+}
+/*для ширины экрана до 500 px*/
+@media (max-width: 499px){
+    .nav{
+        float:none;
+        display: none;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 0px;
+        background: #fed136;
+        color: #484543;
+        background:  rgba(254, 209, 54, 0.7);
+        border-radius: 3px;
+        padding: 10px 0;
+        font-weight: bold;
+        font-size: 14px;
+        width: 130px;
+        margin-left: 17px;
+    }
+    .login {
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+
+    .profile {
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+
+    .about {
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+
+    .menu-button-close {
+        display: block;}
+
+}
+/*для ширины экрана от 500 px*/
+@media (min-width: 500px){
+
+    .button {
+        float: right;
+        margin-top: 41px;
+        margin-right: 20px;
+    }
+
+    .logo {
+        float: left;
+        margin-left: 20px;
+    }
+
+    .nav{
+        display: flex;
+
+    }
+
+    .menu-button{
+        display:none;
+    }
+
+    .menu-button-close {
+        display: none;
+    }
+
+    .login {
+        text-transform: uppercase;
+        margin-left: 41px;
+
+    }
+
+    .profile {
+        text-transform: uppercase;
+        margin-left: 41px;
+    }
+
+    .about {
+        text-transform: uppercase;
+        margin-left: 41px;
+    }
+}
+
+
+/*для ширины экрана от 1000 px*/
+@media (min-width: 1000px){
+    .container {
+        width: 930px;
+    }
+}
+

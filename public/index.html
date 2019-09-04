@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href= "/main.css">
+	<link rel="stylesheet" href= "/blocks/form/form.css">
+	<title> 
+		Page
+	</title>	
+</head>
+<body>
+	<header>
+        <div id="mypopup"  class="popup clearfix">
+            <span class="close">&times;</span>
+                <h2>Авторизация</h2>
+            <form action="" id="login-form">
+                <input type="text" name="username" placeholder="Введите логин">
+                <br>
+                <input type="email" name="email" placeholder="Введите e-mail">
+                <br>
+                <input type="submit" id="login-button" value="Войти">
+            </form>
+
+        </div>
+		<div class="container">
+            <div  id="myBtnLog" class="button">
+                Войти
+            </div>
+            <div class="nav-wraper clearfix">
+			<img src='img/logo.png' alt= "Golden" class='logo'>
+                <div id="application">
+                        <button id="menu-button" class="menu-button">
+                           <span class="menu-button-line"></span>
+                            <span class="menu-button-line"></span>
+                            <span class="menu-button-line"></span>
+                        </button>
+                        <button id="menu-button-close" class="menu-button-close" >
+                            <span id="menu-button-times" class="menu-button-times" hidden>&times;</span>
+                        </button>
+                        <nav id="navigation" class="nav"> </nav>
+
+                </div>
+            </div>
+		</div>
+
+            <div id="content" class="container">
+                    <section id="login" hidden>
+                        <h2>Content </h2>
+                    </section>
+                    <section id="profile" hidden>
+                        <h2> My name is <span id = "username-div"> Onotolle</span></h2>
+                        <p>I am a cool on <strong id = "count-div"> </strong></p>
+                        <em id="email-div">  </em>
+                    </section>
+                    <section id="about" hidden>
+                        <h2> My site js <h2>
+                    </section>
+            </div>
+            <div class="titles">
+                <div class="titles_first">
+                    Веб-студия
+                </div>
+                <h1>
+                    Front-end
+                </h1>
+            </div>
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+ <script src="/modules/http.js"></script>
+ <script src="/services/user-service.js"></script>
+ <script src="/main.js"></script>
+</body>
+</html>
